@@ -1,31 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-    
-let captchas = [
-    { image: "/Users/may/Downloads/cat.png", mot: "chat" },
-    { image: "/Users/may/Downloads/fork.png", mot: "fourchette" },
-    
-];
+function randomImage() {
+            var images = [
+                "img/butterfly.png",
+                "img/car.png",
+                "img/cat.png",
+                "img/cow.png",
+                "img/flower.png",
+                "img/tree.png"
+                // Ajoutez ici les noms de fichier de vos images
+            ];
 
-
-let userText = document.getElementById('textBox');
-let output = document.getElementById('output');
-let refreshButton = document.getElementById('refreshButton');
-
-function refreshCaptcha() {
- 
-    let nouveauCaptcha = captchas[Math.floor(Math.random() * captchas.length)];
-
-    
-    document.getElementById('captcha').src = nouveauCaptcha.image;
-
-    
-    motAttendu = nouveauCaptcha.mot;
-
-    
-    userText.value = "";
-    output.innerHTML = "";
-}
-
-refreshButton.addEventListener('click', function() {
-    refreshCaptcha();
-});
+            var randomIndex = Math.floor(Math.random() * images.length);
+            var randomImage = images[randomIndex];
+            document.getElementById("randomImage").src = randomImage;
+        }
+        
+        // Exécuter la fonction randomImage() lorsque la page se charge
+        window.onload = randomImage;
