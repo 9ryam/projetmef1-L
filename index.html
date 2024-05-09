@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <title>Random Image Guess</title>
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            <p>Que représente le dessin ?</p>
-            <img id="randomImage" src="" alt="Image aléatoire">
-        </div>
+    <div class="title-container">
+        <u><h1 id="pageTitle"> CAPTCHA </h1></u>
+      <h3> Que voyez-vous ?</h3>
     </div>
+  <img id="randomImage" src="" alt="Random Image">
+  
+  <input type="text" id="guessInput" placeholder="Écrivez-ici en minuscule...">
+  <button id="submitGuess">Validez</button>
+  <p id="result"></p>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
