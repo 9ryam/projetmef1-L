@@ -1,24 +1,30 @@
 body, html {
     height: 100%;
     margin: 0;
-    background-color: #9CC8E4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #EEE8D6;
+    font-family: Arial, sans-serif;
 }
-
 .title-container {
   text-align: center;
+  margin-top: auto;
+  margin: 0 auto;
 }
-
+#pageTitle{
+  color: #808000;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 .container {
   text-align: center;
+  margin-top: 50px; /* Espacement depuis le haut de la page */
 }
 
 #randomImage {
   width: 200px; 
   height: auto; 
   border: 0.5px solid black; 
+  margin: 0 auto;
 }
 
 #guessInput {
@@ -32,8 +38,15 @@ body, html {
 .encadre {
   width: 300px; /* Largeur de l'encadré */
   padding: 20px; /* Espace à l'intérieur de l'encadré */
-  border: 0.5px solid #2D6B92; /* Bordure */
+  border: 0.5px solid white; /* Bordure */
   margin: 0 auto; /* Centrage horizontale */
-  background-color: #DFF6F7; /* Couleur de fond */
+  background-color: #d8d3ae; /* Couleur de fond */
 }
-
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #f2f2f2;
+  margin-top: auto; /* Marge supérieure automatique */
+  width: 100%;
+  color: #666;
+}
