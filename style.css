@@ -4,22 +4,20 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #DBC2D9;
+    background-color: #9CC8E4;
 }
-
-.container {
-    text-align: center;
-}
-
 .title-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .container {
-  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #randomImage {
@@ -27,12 +25,12 @@ body, html {
   height: auto; 
   display: block; 
   margin: 0 auto; 
-  border: 2px solid black; 
-    margin-top: 170px;
-    position: fixed;
-     top: 0;
-     left: 50%;  
-     transform: translateX(-50%);
+  border: 0.5px solid black; 
+  margin-top: 170px;
+  position: fixed;
+  top: 0;
+  left: 50%;  
+  transform: translateX(-50%);
 }
 
 #guessInput {
@@ -44,6 +42,21 @@ body, html {
 }
 
 #submitGuess {
-    margin-top: 115px;
+  margin-top: 435px;
+  position: fixed;
+  top: 0;
+  left: 50%;  
+  transform: translateX(-50%);
+}
+
+.encadre-blanc {
+    width: 100px; 
+    padding: 100px;
+    background-color:#DFF6F7; 
+}
+.encadre {
+    width: 165px; 
+    padding: 165px;
+    border: 0.5px solid #2D6B92; 
 }
 
