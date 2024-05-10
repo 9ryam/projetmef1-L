@@ -1,77 +1,100 @@
-body, html {
+body,
+html {
     height: 100%;
+    background-color:#d6deb9;
     margin: 0;
-    background-color: #EEE8D6;
     font-family: Arial, sans-serif;
 }
-.title-container {
-  text-align: center;
-  margin-top: auto;
-  margin: 0 auto;
-}
-#pageTitle{
-  color: #808000;
-  font-family: Arial, sans-serif;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-.container {
-  text-align: center;
-  margin-top: 50px; /* Espacement depuis le haut de la page */
+
+h2 {
+    text-align: center;
+    margin-top: auto;
+    margin: 0 auto;
+    font-size: 20px;
 }
 
+p {
+    padding: 10px;
+}
+h3{
+    text-align:center;
+    font-weight: bold;
+    font-size: 20px;
+    color:#717A66;
+}
 #randomImage {
-  width: 200px; 
-  height: auto; 
-  border: 0.5px solid black; 
-  margin: 0 auto;
+    width: 200px;
+    height: auto;
+    border: 0.5px solid black;
+    margin: 0 auto;
 }
 
 #guessInput {
-  margin-top: 20px; /* Espacement depuis le dessus de l'encadré */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #submitGuess {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px; /* Espacement depuis le dessus de l'encadré */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .encadre {
-  width: 300px; /* Largeur de l'encadré */
-  padding: 20px; /* Espace à l'intérieur de l'encadré */
-  border: 0.5px solid white; /* Bordure */
-  margin: 0 auto; /* Centrage horizontale */
-  background-color: #d8d3ae; /* Couleur de fond */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    font-weight: 200;
+    height: 100px;
+}
+.encadre1 {
+    background-color: white;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+    margin-top: 10px;
+    margin: 0 auto;
+    width: 80%;
+    font-weight: 200;
 }
 footer {
-  text-align: center;
-  padding: 5px;
-  background-color: #f2f2f2;
-  margin-top: auto; /* Marge supérieure automatique */
-  width: 100%;
-  color: #666;
+    text-align: center;
+    padding: 2px;
+    background-color: #f2f2f2;
+    margin-top: auto;
+    /* Marge supérieure automatique */
+    width: 100%;
+    color: #666;
 }
+
 .boite-details {
-    border: 1px solid #676900;
+    border: 1px solid #2b3443;
     padding: 10px;
     margin-bottom: 10px;
 }
+
 img {
-    display: block; 
+    display: block;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;
 }
+
 .encadre-scroll {
     margin-left: auto;
     margin-right: auto;
-    
-    background-color: #4a4c08;
-    color:#f2f2f2;
-    width: 600px; /* Largeur de l'encadré */
-    height: 82px; /* Hauteur de l'encadré */
-    overflow-y: auto; /* Activation du défilement vertical */
-    padding: 1px; /* Marge intérieure pour un espacement adéquat du contenu */
+    background-color: #f4f1d6;
+    color: black;
+    width: 600px;
+    /* Largeur de l'encadré */
+    height: 100px;
+    /* Hauteur de l'encadré */
+    overflow-y: auto;
 }
 
 .menu-contact {
@@ -82,12 +105,13 @@ img {
 
 .menu-contact a {
     display: inline-block;
-    margin-left: 10px; /* Espacement entre les icônes */
+    margin-left: 10px;
+    /* Espacement entre les icônes */
 }
 
 .menu-contact img {
-    width: 30px; /* Taille des icônes */
-    height: auto; /* Pour conserver les proportions */
+    width: 30px;
+    /* Taille des icônes */
+    height: auto;
+    /* Pour conserver les proportions */
 }
-
-
