@@ -15,6 +15,13 @@
     <div class="menu-contact">
       <a href="mailto:77maryamkitty@gmail.com"><img src="icon/gmail.png" alt="E-mail"></a>
       <a href="https://github.com/mk42jk/captcha.git"><img src="icon/github.png" alt="GitHub"></a>
+          <div class="menu-container">
+              <ul class="menu">
+                  <li><a href="#Captcha">Captcha</a></li>
+                  <li><a href="#Utilisation">Utilisation</a></li>
+              </ul>
+          </div>
+      </div>
     </div>
   </div>
   <br/>
@@ -23,39 +30,41 @@
   <h3> Que voyez-vous sur cette image ?</h3>
   <img id="randomImage" src="" alt="Random Image">
 
-  <input type="text" id="guessInput" placeholder="Écrivez-ici en minuscule...">
+  <input type="text" id="guessInput" placeholder="Écrivez-ici...">
   <button id="submitGuess">Validez</button>
-  <p id="result"></p>
+  <h2 id="result"></h2>
+    <br/>
 
   <script src="script.js"></script>
 
   <main>
-    <hr />
-    <details class="boite-details">
-      <summary>Qu'est ce qu'un Captcha ? </summary>
-      <p>D'après le Dictionnaire, c'est <i>un test requis pour accéder à certains services sur Internet, qui consiste à
-          saisir une courte séquence visible sur une image, afin de différencier les utilisateurs humains d'éventuels
-          robots malveillants.</i>
-      </p>
-    </details>
-    <p>
-      Les Captchas auxquels vous avez l'habitude d'être soumis sont confectionnés à l'aide d'un code PHP. En effet, le
-      serveur génère une image aléatoire en PHP à l'aide de lettres et chiffres de différentes couleurs et polices, puis
-      l'utilisateur doit saisir cette séquence de caractères.
-      <img src="icon/captchaphp.png" alt="Vérification PHP" width="400" height="247">
-    </p>
-    <p>
-      Il y a bien évidemment d'autres styles de vérification, comme reCaptcha de Google qui fonctionne à l'aide de
-      photos à identifier. Ces dernières deviennent de moins en moins efficaces face aux IA qui désormais arrivent à
-      déceler le contenu d'une image.
-    </p>
-    <img src="icon/recaptcha.png" alt="Vérification Google" width="400" height="247">
-    <p>
-      Cet outil s'utilise afin de limiter l'accès à votre site web aux robots, bots, logiciels malveillants, etc. Il est
-      donc pratique pour protéger votre site et le rendre plus sûr.
-    </p>
+    <hr/>
+    <section id="Captcha">
+        
+          <u> Qu'est ce qu'un Captcha ?</u> 
+          <p>D'après le Dictionnaire, c'est <i>un test requis pour accéder à certains services sur Internet, qui consiste à
+              saisir une courte séquence visible sur une image, afin de différencier les utilisateurs humains d'éventuels
+              robots malveillants.</i>
+          </p>
+        <p>
+          Les Captchas auxquels vous avez l'habitude d'être soumis sont confectionnés à l'aide d'un code PHP. En effet, le
+          serveur génère une image aléatoire en PHP à l'aide de lettres et chiffres de différentes couleurs et polices, puis
+          l'utilisateur doit saisir cette séquence de caractères.
+        </p>
+        <p>
+          Il y a bien évidemment d'autres styles de vérification, comme reCaptcha de Google qui fonctionne à l'aide de
+          photos à identifier. Ces dernières deviennent de moins en moins efficaces face aux IA qui désormais arrivent à
+          déceler le contenu d'une image.
+        </p>
+        <p>
+          Cet outil s'utilise afin de limiter l'accès à votre site web aux robots, bots, logiciels malveillants, etc. Il est
+          donc pratique pour protéger votre site et le rendre plus sûr.
+        </p>
+    </section>
+    
     <hr />
     <br />
+     <section id="Utilisation">
     <h3>
       Pourquoi utiliser notre Capchat plutôt qu'un autre ?
     </h3>
@@ -69,10 +78,15 @@
         test avec chacunes d'entre elles.</p>
     </div>
     <br />
+       <br />
+       <br />
+       <br />
+       <br />
     <p> Afin d'ajouter notre outil à votre site, cliquez en haut à droite de l'écran. Il y'a un répertoire Github où
       vous trouverez le nécessaire pour sécuriser votre site avec notre mécanisme.</p>
+       
 
-  </div>
+       </section>
 </main>
     <br />
   <br/>
