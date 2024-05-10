@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-  <title>Random Image Guess</title>
+  <title>MK CAPTCHA</title>
+  <link rel="icon" type="image/png" href="icon/robot.png">
 </head>
 <body>
     <div class="title-container">
         <u><h1 id="pageTitle"> CAPTCHA </h1></u>
-      <h3> Que voyez-vous ?</h3>
+      <h3> Que voyez-vous sur cette image ?</h3>
     </div>
+  <div class="encadre-blanc encadre">
   <img id="randomImage" src="" alt="Random Image">
   
   <input type="text" id="guessInput" placeholder="Écrivez-ici en minuscule...">
   <button id="submitGuess">Validez</button>
   <p id="result"></p>
-
+  </div>
+  
   <script src="script.js"></script>
 </body>
 </html>
+
