@@ -1,62 +1,38 @@
 body, html {
     height: 100%;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #9CC8E4;
 }
+
 .title-container {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 20px; /* Espacement depuis le haut de la page */
 }
 
 .container {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 50px; /* Espacement depuis le haut de la page */
 }
 
 #randomImage {
   width: 200px; 
   height: auto; 
-  display: block; 
-  margin: 0 auto; 
   border: 0.5px solid black; 
-  margin-top: 170px;
-  position: fixed;
-  top: 0;
-  left: 50%;  
-  transform: translateX(-50%);
 }
 
 #guessInput {
- margin-top: 410px;
- position: fixed;
- top: 0;
- left: 50%;  
- transform: translateX(-50%); 
+  margin-top: 20px; /* Espacement depuis le dessus de l'encadré */
 }
 
 #submitGuess {
-  margin-top: 435px;
-  position: fixed;
-  top: 0;
-  left: 50%;  
-  transform: translateX(-50%);
+  margin-top: 20px; /* Espacement depuis le dessus de l'encadré */
 }
 
-.encadre-blanc {
-    width: 100px; 
-    padding: 100px;
-    background-color:#DFF6F7; 
-}
 .encadre {
-    width: 165px; 
-    padding: 165px;
-    border: 0.5px solid #2D6B92; 
+  width: 300px; /* Largeur de l'encadré */
+  padding: 20px; /* Espace à l'intérieur de l'encadré */
+  border: 0.5px solid #2D6B92; /* Bordure */
+  margin: 0 auto; /* Centrage horizontale */
+  background-color: #DFF6F7; /* Couleur de fond */
 }
 
