@@ -2,16 +2,17 @@ body, html {
     height: 100%;
     margin: 0;
     background-color: #9CC8E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title-container {
   text-align: center;
-  margin-top: 20px; /* Espacement depuis le haut de la page */
 }
 
 .container {
   text-align: center;
-  margin-top: 50px; /* Espacement depuis le haut de la page */
 }
 
 #randomImage {
