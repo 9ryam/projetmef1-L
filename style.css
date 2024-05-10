@@ -32,6 +32,8 @@ body, html {
 }
 
 #submitGuess {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px; /* Espacement depuis le dessus de l'encadré */
 }
 
@@ -50,3 +52,42 @@ footer {
   width: 100%;
   color: #666;
 }
+.boite-details {
+    border: 1px solid #676900;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+img {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;   
+}
+.encadre-scroll {
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: #4a4c08;
+    color:#f2f2f2;
+    width: 600px; /* Largeur de l'encadré */
+    height: 82px; /* Hauteur de l'encadré */
+    overflow-y: auto; /* Activation du défilement vertical */
+    padding: 1px; /* Marge intérieure pour un espacement adéquat du contenu */
+}
+
+.menu-contact {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.menu-contact a {
+    display: inline-block;
+    margin-left: 10px; /* Espacement entre les icônes */
+}
+
+.menu-contact img {
+    width: 30px; /* Taille des icônes */
+    height: auto; /* Pour conserver les proportions */
+}
+
+
