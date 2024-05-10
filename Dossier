@@ -3,6 +3,9 @@ une description des choix techniques (pourquoi avez-vous choisi cette solution e
 des schémas de fonctionnement
 la présentation des tâches par étudiant
 les perspectives d'évolution de votre projet (si vous aviez l'intention d'aller plus loin)
+Pour le coté pratique de l'utilisation et du visionnage de notre outil, nous avons généré un lien web à l'aide de Github Pages : 
+https://mk42jk.github.io/captcha/
+Mais aussi pour le côté sécurité, en effet mettre notre site sur le web à l'aide de Github Pages nous permets aussi d'avoir la mention https.
 
 CAHIER DES CHARGES
 
