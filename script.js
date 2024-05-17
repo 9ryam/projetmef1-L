@@ -1,3 +1,4 @@
+
 function toggleMenu() {
     const navbarNav = document.getElementById('navbarNav');
     const navbarToggler = document.getElementById('navbarToggler');
@@ -95,10 +96,6 @@ window.onload = randomImage;
 document.getElementById("submitGuessSimple").addEventListener("click", checkGuess); // Utilise checkGuess pour le captcha simple
 // Au chargement de la page, afficher une image aléatoire
 window.onload = randomImage;
-
-// Événement pour envoyer un email
-document.getElementById("sendEmailBtn").addEventListener("click", sendEmail);
-
 
 
 function sendEmail() {
