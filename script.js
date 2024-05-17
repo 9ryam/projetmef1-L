@@ -68,7 +68,7 @@ function randomImage() {
             // Redirection vers le site après validation du captcha
             setTimeout(function() {
                 window.location.href = "main.html";
-                }, 3000);
+                }, 2000);
         } else {
             resultText = "Faux :/ Réessayez !";
         }
