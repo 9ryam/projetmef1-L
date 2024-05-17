@@ -56,8 +56,8 @@ function randomImage() {
       document.getElementById("randomImage").src = randomImage.src;
       document.getElementById("randomImage").title = randomImage.title;
     }
-    function checkGuess1() {
-        window.onload = randomImage;
+   
+      function checkGuess1() {
 
         var userGuess = document.getElementById("guessInput").value.toLowerCase();
         var correctAnswer = document.getElementById("randomImage").title.toLowerCase();
@@ -73,7 +73,6 @@ function randomImage() {
             resultText = "Faux :/ Réessayez !";
         }
         document.getElementById("result").textContent = resultText;
-        document.getElementById("submitGuess").addEventListener("click", checkGuess1);
     }
 
 // Fonction pour vérifier le captcha sans changement de page
@@ -89,20 +88,13 @@ function checkGuess() {
     }
     document.getElementById("result").textContent = resultText;
 }
-
+document.getElementById("submitGuess").addEventListener("click", checkGuess1);
 // Événement pour vérifier le captcha lors du clic sur le bouton
 document.getElementById("submitGuess").addEventListener("click", checkGuess1); // Utilise checkGuess1 pour le captcha avec redirection
-
 // Événement pour vérifier le captcha lors du clic sur le bouton (pour le captcha simple)
 document.getElementById("submitGuessSimple").addEventListener("click", checkGuess); // Utilise checkGuess pour le captcha simple
-
 // Au chargement de la page, afficher une image aléatoire
 window.onload = randomImage;
-
-// Événement pour envoyer un email
-document.getElementById("sendEmailBtn").addEventListener("click", sendEmail);
-
-
 
 function sendEmail() {
     window.location.href = "mailto:77maryamkitty@gmail.com";
