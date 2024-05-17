@@ -57,6 +57,8 @@ function randomImage() {
       document.getElementById("randomImage").title = randomImage.title;
     }
     function checkGuess1() {
+        window.onload = randomImage;
+
         var userGuess = document.getElementById("guessInput").value.toLowerCase();
         var correctAnswer = document.getElementById("randomImage").title.toLowerCase();
 
@@ -71,6 +73,7 @@ function randomImage() {
             resultText = "Faux :/ Réessayez !";
         }
         document.getElementById("result").textContent = resultText;
+        document.getElementById("submitGuess").addEventListener("click", checkGuess1);
     }
 
 // Fonction pour vérifier le captcha sans changement de page
