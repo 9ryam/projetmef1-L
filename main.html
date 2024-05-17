@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A very modern website example">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Modern, Blue">
+    <meta name="author" content="Your Name">
+    <title>MKC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <span>MK CAPTCHA</span>
+            <small class="navbar-subtitle">Sécurité infaillible, Simplicité d'utilisation.</small>
+        </div>
+        <button class="navbar-toggler" id="navbarToggler"  onclick="toggleMenu()">☰</button>
+        <div class="navbar-menu" id="navbarNav">
+            <a href="#Accueil" class="nav-link">Accueil</a>
+            <a href="#MKC" class="nav-link">MKC</a>
+            <a href="#Utilisation" class="nav-link">Utilisation</a>
+            <a href="#Contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Bienvenue chez MKC :</h1>
+        <p class="subtitle">Pour que vos clients naviguent en toute sécurité.</p>
+        <br>
+        <br>
+        <a href="#Accueil" class="btn">En savoir plus</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>🔐</h1>
+    </header>
+    <section id="Accueil" class="section">
+        <h2> 🤖 Captcha </h2>
+        <p>D'après le Dictionnaire, c'est <i>un test requis pour accéder à certains services sur Internet, qui consiste à
+              saisir une courte séquence visible sur une image, afin de différencier les utilisateurs humains d'éventuels
+              robots malveillants.</i>
+          </p>
+        <p>
+          Les Captchas auxquels vous avez l'habitude d'être soumis sont confectionnés à l'aide d'un code PHP. En effet, le
+          serveur génère une image aléatoire en PHP à l'aide de lettres et chiffres de différentes couleurs et polices, puis
+          l'utilisateur doit saisir cette séquence de caractères.
+        </p>
+        <p>
+          Il y a bien évidemment d'autres styles de vérification, comme reCaptcha de Google qui fonctionne à l'aide de
+          photos à identifier. Ces dernières deviennent de moins en moins efficaces face aux IA qui désormais arrivent à
+          déceler le contenu d'une image.
+        </p>
+        <p>
+          Cet outil s'utilise afin de limiter l'accès à votre site web aux robots, bots, logiciels malveillants, etc. Il est
+          donc pratique pour protéger votre site et le rendre plus sûr.
+        </p>
+
+    </section>
+    <section id="MKC" class="section">
+        <h2> 🧐 Mais qu'est ce que MKC ? </h2>
+        <p>MKC (MK CAPTCHA) est <i>un outil conçu pour distinguer les utilisateurs humains des robots malveillants.</i> Comment ça marche ? C'est très simple : essayez MKC juste en dessous pour voir par vous-même.</p>
+        <img id="randomImage" src="" alt="Random Image"><br>
+ <input type="text" id="guessInput" placeholder="Écrivez-ici..."><br>
+          <button id="submitGuess" class="btn">Validez</button>
+          <h3 id="result"></h3>
+            <br/>
+        <p> Comme vous venez de l'expérimenter, ce n'est pas un Captcha classique, car il est composé d'images dessinées à la main, contrairement à ceux présentés plus haut eux générées avec PHP. </p><p>Ce type d'authentification nous permet de savoir avec certitude si vous êtes un humain ou un robot. Nous avons montré chacune de nos images à une IA, et aucune n'a été reconnue. Nous sommes donc certains qu'aucune IA malveillante ne pourra pas accéder à notre site web.</p>
+            Nous mettons à jour nos images chaque semestre en les testant avec des IA pour garantir une sécurité optimale.</p>
+    </section>
+
+    <section id="Utilisation" class="section">
+        <h2>🖥 Comment ajouter MKC sur vos sites web?</h2>
+        <p> Vous êtes intéressé par notre outil et vous voulez l'intégré à vos projets ? Laissez nous vous guidez afin de protéger vos clients et vos données. </p>
+        <hr>
+        <p> Tout d'abord ici vous trouverez un lien vers un commit github où toutes les ressources requises vous attendent : </p>
+        <a href="https://github.com/mk42jk/captcha.git" target="_blank">
+            <button class="btn" id="submitGuess">Lien commit Github</button>
+        </a>
+    </section>
+
+    <section id="Contact" class="section">
+        <h2> 📇 Contactez-nous</h2>
+        <p>N'hésitez pas à revenir vers nous en cas de question sur les méthodes à suivre, sur les prochaines mise à jour ou encore pour soulever des idées d'amélioration !</p>
+        <button class="btn" onclick="sendEmail()">Envoyez-nous un email ✉️</button>
+        <button class="btn" onclick="callUs()">Appelez-nous 📞</button>
+    </section>
+
+    <script src="script.js"></script>
+
+        <footer>
+          <p>© Copyright 2024 par MKC. Tous droits réservés.</p>
+        </footer>
+</body>
+</html>
