@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 /*styles pour le captcha d'entrée*/
 /* Styles pour le captcha */
@@ -10,7 +11,7 @@ body {
 }
 
 .captcha-container {
-   max-width: 600px;
+    max-width: 600px;
     margin-top: 6rem;
     padding: 20px;
     background-color: #fff;
