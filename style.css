@@ -210,3 +210,28 @@ h3 {
     margin-right: auto;
     
 }
+#submitGuessSimple {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+.responsive-image2 {
+    width: 80%; 
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+@media (max-width: 768px) {
+    .responsive-image {
+        width: 90%; 
+        max-width: 400px;
+    }
+}
+
