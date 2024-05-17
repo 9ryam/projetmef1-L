@@ -65,7 +65,7 @@
         <p>MKC (MK CAPTCHA) est <i>un outil conçu pour distinguer les utilisateurs humains des robots malveillants.</i> Comment ça marche ? C'est très simple : essayez MKC juste en dessous pour voir par vous-même.</p>
         <img id="randomImage" src="" alt="Random Image"><br>
  <input type="text" id="guessInput" placeholder="Écrivez-ici..."><br>
-          <button id="submitGuess" class="btn">Validez</button>
+          <button id="submitGuessSimple" class="btn">Validez</button>
           <h3 id="result"></h3>
             <br/>
         <p> Comme vous venez de l'expérimenter, ce n'est pas un Captcha classique, car il est composé d'images dessinées à la main, contrairement à ceux présentés plus haut eux générées avec PHP. </p><p>Ce type d'authentification nous permet de savoir avec certitude si vous êtes un humain ou un robot. Nous avons montré chacune de nos images à une IA, et aucune n'a été reconnue. Nous sommes donc certains qu'aucune IA malveillante ne pourra pas accéder à notre site web.</p>
@@ -77,9 +77,16 @@
         <p> Vous êtes intéressé par notre outil et vous voulez l'intégré à vos projets ? Laissez nous vous guidez afin de protéger vos clients et vos données. </p>
         <hr>
         <p> Tout d'abord ici vous trouverez un lien vers un commit github où toutes les ressources requises vous attendent : </p>
-        <a href="https://github.com/mk42jk/captcha.git" target="_blank">
+        <a href="https://github.com/mk42jk/MK-Captcha.git" target="_blank">
             <button class="btn" id="submitGuess">Lien commit Github</button>
         </a>
+        <p> Lorsque vous accédez au commit github, vous vous retrouvez avec ces 3 fichiers accompagnés d'un dossier : </p>
+        <img src="icon/screen1.png" alt="screen dossier" class="responsive-image">
+        <p> <u>- img :</u> contient une vingtaine d'images qui s'afficheront aléatoirement.<br><u>- index.html :</u> le fichier source html<br> <u>- script.js :</u> le fichier javascript qui contient plusieurs fonctions dont celle qui affiche le captcha.<br> <u>- style.css :</u> le fichier css afin de styliser l'interface, vous pouvez modifier ce dernier aux goûts et couleurs de votre site.</p>
+        <p> Afin de créer une page dissocié de votre site web, il vous faudra nommé votre code source html <i><b>main.html</b></i> et enregistré tel quel notre fichier <i><b>index.html</b></i>.</p>
+        <p>Pour ce qui est des fichiers javascript et css, vous pouvez simplement en extirper le contenu et l'ajouter à vos fichiers déjà existant. N'oubliez pas d'enregistrer au préalable le dossier image et de vous assurer du chemin de ce dernier ainsi que de modifier les lignes de codes suivantes en fonction des noms de vos propres fichiers. </p>
+        <img src="icon/screen2.png" alt="screen dossier" class="responsive-image2">
+        <p> Et voilà ! C'est aussi simple que ça, maintenant il ne vous reste plus qu'à apprécier votre navigation en toute sécurité.</p>
     </section>
 
     <section id="Contact" class="section">
