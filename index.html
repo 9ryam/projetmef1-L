@@ -1,95 +1,21 @@
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>MK CAPTCHA</title>
-  <link rel="icon" type="image/png" href="icon/robot.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Verification</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="encadre">
-    <p id="pageTitle">MK'CAPTCHA,<br/> Pour que vos clients puissent naviguer en toute sécurité. </p>
-    <div class="menu-contact">
-      <a href="mailto:77maryamkitty@gmail.com"><img src="icon/gmail.png" alt="E-mail"></a>
-      <a href="https://github.com/mk42jk/captcha.git"><img src="icon/github.png" alt="GitHub"></a>
-          <div class="menu-container">
-              <ul class="menu">
-                  <li><a href="#Captcha">Captcha</a></li>
-                  <li><a href="#Utilisation">Utilisation</a></li>
-              </ul>
-          </div>
-      </div>
+    <div class="captcha-container">
+        <h1>Bienvenue sur notre site</h1>
+        <p>Avant de continuer, veuillez résoudre ce captcha :</p>
+        <img id="randomImage" src="" alt="Image aléatoire">
+        <input type="text" id="guessInput" placeholder="Entrez votre réponse ici">
+        <button id="submitGuess">Vérifier</button>
+        <p id="result"></p>
     </div>
-  </div>
-  <br/>
-  <br/>
-  <div class="encadre1">
-  <h3> Que voyez-vous sur cette image ?</h3>
-  <img id="randomImage" src="" alt="Random Image">
-
-  <input type="text" id="guessInput" placeholder="Écrivez-ici...">
-  <button id="submitGuess">Validez</button>
-  <h2 id="result"></h2>
-    <br/>
-
-  <script src="script.js"></script>
-
-  <main>
-    <hr/>
-    <section id="Captcha">
-         
-          <u> Qu'est ce qu'un Captcha ?</u> 
-          <p>D'après le Dictionnaire, c'est <i>un test requis pour accéder à certains services sur Internet, qui consiste à
-              saisir une courte séquence visible sur une image, afin de différencier les utilisateurs humains d'éventuels
-              robots malveillants.</i>
-          </p>
-        <p>
-          Les Captchas auxquels vous avez l'habitude d'être soumis sont confectionnés à l'aide d'un code PHP. En effet, le
-          serveur génère une image aléatoire en PHP à l'aide de lettres et chiffres de différentes couleurs et polices, puis
-          l'utilisateur doit saisir cette séquence de caractères.
-        </p>
-        <p>
-          Il y a bien évidemment d'autres styles de vérification, comme reCaptcha de Google qui fonctionne à l'aide de
-          photos à identifier. Ces dernières deviennent de moins en moins efficaces face aux IA qui désormais arrivent à
-          déceler le contenu d'une image.
-        </p>
-        <p>
-          Cet outil s'utilise afin de limiter l'accès à votre site web aux robots, bots, logiciels malveillants, etc. Il est
-          donc pratique pour protéger votre site et le rendre plus sûr.
-        </p>
-    </section>
-    
-    <hr />
-    <br />
-     <section id="Utilisation">
-    <h3>
-      Pourquoi utiliser notre Capchat plutôt qu'un autre ?
-    </h3>
-<div class="encadre2">
-      <p> Comme vous pouvez le voir, notre outil n'a pas été conçu avec des images générées en PHP mais avec des images
-        dessinées à la main sur tablette graphique. L'avantage d'utiliser ce procédé c'est l'assurance qu'une IA ne
-        reconnaîtra pas l'image et ne pourra donc pas passer le test. Car oui, avec les avancées technologiques cette
-        forme de sécurité deviendra obsolète façe aux nouveaux outils. De notre côté nous nous sommes assurées que les
-        intelligences artificielles ne pourront pas reconnaîtrent les images utilisées ici en leur faisant passer le
-        test avec chacunes d'entre elles.</p></div>
-      <p> Afin d'ajouter notre outil à votre site, cliquez en haut à droite de l'écran. Il y'a un répertoire Github où
-         vous trouverez le nécessaire pour sécuriser votre site avec notre mécanisme.</p>
-    
-       <br/>
-       <br/>
-       <br/> </div>
-       </section>
-    
-</main>
-    <br />
-  <br/>
-    <footer>
-      <p>© Copyright 2024 par MK. Tous droits réservés.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
