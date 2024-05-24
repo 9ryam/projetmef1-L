@@ -26,14 +26,27 @@ document.addEventListener('DOMContentLoaded', function() {
         hideMenu();
     });
 });
+
 function randomImage() {
     var images = [
         { src: "img/butterfly.png", title: "papillon" },
+        { src: "img/cake.png", title: "gateau" },
+        { src: "img/candle.png", title: "bougie" },
+        { src: "img/candy.png", title: "bonbon" },
         { src: "img/car.png", title: "voiture" },
         { src: "img/cat.png", title: "chat" },
+        { src: "img/chair.png", title: "chaise" },
+        { src: "img/cloud.png", title: "nuage" },
         { src: "img/cow.png", title: "vache" },
+        { src: "img/dice.png", title: "de" },
+        { src: "img/dress.png", title: "robe" },
         { src: "img/flower.png", title: "fleur" },
-        { src: "img/tree.png", title: "arbre" }
+        { src: "img/hat.png", title: "chapeau" },
+        { src: "img/knife.png", title: "couteau" },
+        { src: "img/pizza.png", title: "pizza" },
+        { src: "img/pull.png", title: "pull" },
+        { src: "img/tree.png", title: "arbre" },
+        { src: "img/umbrella.png", title: "parapluie" }
     ];
 
     var randomIndex = Math.floor(Math.random() * images.length);
@@ -42,38 +55,23 @@ function randomImage() {
     document.getElementById("randomImage").title = randomImage.title;
 }
 
-    function randomImage() {
-      var images = [
-        { src: "img/butterfly.png", title: "papillon" },
-        { src: "img/car.png", title: "voiture" },
-        { src: "img/cat.png", title: "chat" },
-        { src: "img/cow.png", title: "vache" },
-        { src: "img/flower.png", title: "fleur" },
-        { src: "img/tree.png", title: "arbre" }
-      ];
+function checkGuess1() {
 
-      var randomIndex = Math.floor(Math.random() * images.length);
-      var randomImage = images[randomIndex];
-      document.getElementById("randomImage").src = randomImage.src;
-      document.getElementById("randomImage").title = randomImage.title;
+    var userGuess = document.getElementById("guessInput").value.toLowerCase();
+    var correctAnswer = document.getElementById("randomImage").title.toLowerCase();
+
+    var resultText = "";
+    if (userGuess === correctAnswer) {
+        resultText = "Correct, vous n'êtes pas un robot :) Bienvenue !";
+        // Redirection vers le site après validation du captcha
+        setTimeout(function() {
+            window.location.href = "main.html";
+        }, 2200);
+    } else {
+        resultText = "Faux :/ Réessayez !";
     }
-    function checkGuess1() {
-
-        var userGuess = document.getElementById("guessInput").value.toLowerCase();
-        var correctAnswer = document.getElementById("randomImage").title.toLowerCase();
-
-        var resultText = "";
-        if (userGuess === correctAnswer) {
-            resultText = "Correct, vous n'êtes pas un robot :) Bienvenue !";
-            // Redirection vers le site après validation du captcha
-            setTimeout(function() {
-                window.location.href = "main.html";
-                }, 2200);
-        } else {
-            resultText = "Faux :/ Réessayez !";
-        }
-        document.getElementById("result").textContent = resultText;
-    }
+    document.getElementById("result").textContent = resultText;
+}
 
 // Fonction pour vérifier le captcha sans changement de page
 function checkGuess() {
